@@ -14,7 +14,7 @@ use yii\web\View;
     <div class="btn-toolbar" style="padding:4px">
         <div class="btn-group" style="display: inline-block;">
             <div class="btn btn-success btn-file" style="display: inline-block">
-                <i class="glyphicon glyphicon-plus"></i><?php echo Yii::t('galleryManager/main', 'Add…'); ?>
+                <i class="fas fa-plus"></i><?php echo Yii::t('galleryManager/main', 'Add…'); ?>
                 <input type="file" name="gallery-image" class="afile" accept="image/*" multiple="multiple"/>
             </div>
         </div>
@@ -27,10 +27,10 @@ use yii\web\View;
                 ); ?>
             </label>
             <div class="btn btn-default disabled edit_selected">
-                <i class="glyphicon glyphicon-pencil"></i> <?php echo Yii::t('galleryManager/main', 'Edit'); ?>
+                <i class="fas fa-edit"></i> <?php echo Yii::t('galleryManager/main', 'Edit'); ?>
             </div>
             <div class="btn btn-default disabled remove_selected">
-                <i class="glyphicon glyphicon-remove"></i> <?php echo Yii::t('galleryManager/main', 'Remove'); ?>
+                <i class="fas fa-remove"></i> <?php echo Yii::t('galleryManager/main', 'Remove'); ?>
             </div>
         </div>
     </div>
