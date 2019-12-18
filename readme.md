@@ -39,7 +39,7 @@ Few more screenshots:
 The preferred way to install this extension is through [composer](https://getcomposer.org/).
 
 Add repo to composer.json
-`php 
+```php 
     "repositories": [
         {
             "type": "composer",
@@ -50,7 +50,7 @@ Add repo to composer.json
             "url": "https://github.com/porcelanosa/yii2-gallery-manager.git"
         }
     ]
-`
+```
 
 Either run
 
