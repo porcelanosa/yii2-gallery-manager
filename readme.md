@@ -1,15 +1,15 @@
 # Gallery Manager usage instructions
 
-Yii2 port of https://github.com/zxbodya/yii-gallery-manager
+Yii2 port of https://github.com/porcelanosa/yii-gallery-manager
 
 (frontend part mostly without changes, but backend was rewritten almost completely)
 
 Gallery manager screenshots (yii 1.x version, new one has bootstrap 3 styles):
 
-![GalleryManager images list](http://zxbodya.cc.ua/scrup/ci/eh1n1th6o0c80.png "Gallery Manager Screenshot")
+![GalleryManager images list](http://porcelanosa.cc.ua/scrup/ci/eh1n1th6o0c80.png "Gallery Manager Screenshot")
 
 Few more screenshots:
-[drag & drop upload](http://zxbodya.cc.ua/scrup/6w/64q4icig84oo0.png "Drag & Drop image upload"), [editing image information](http://zxbodya.cc.ua/scrup/za/gfc68h5b4gksg.png "Edit image information"), [upload progress](http://zxbodya.cc.ua/scrup/8v/tijrezh7oksk8.png "upload progress"), 
+[drag & drop upload](http://porcelanosa.cc.ua/scrup/6w/64q4icig84oo0.png "Drag & Drop image upload"), [editing image information](http://porcelanosa.cc.ua/scrup/za/gfc68h5b4gksg.png "Edit image information"), [upload progress](http://porcelanosa.cc.ua/scrup/8v/tijrezh7oksk8.png "upload progress"), 
 
 
 ## Features
@@ -32,11 +32,11 @@ The preferred way to install this extension is through [composer](https://getcom
 
 Either run
 
-`php composer.phar require --prefer-dist zxbodya/yii2-gallery-manager "*@dev"`
+`php composer.phar require --prefer-dist porcelanosa/yii2-gallery-manager "*@dev"`
 
 or add
 
-`"zxbodya/yii2-gallery-manager": "*@dev"`
+`"porcelanosa/yii2-gallery-manager": "*@dev"`
 
 to the require section of your `composer.json` file.
 
@@ -47,7 +47,7 @@ Add migration to create table for images:
 
 ```php
 class m150318_154933_gallery_ext
-    extends zxbodya\yii2\galleryManager\migrations\m140930_003227_gallery_manager
+    extends porcelanosa\yii2\galleryManager\migrations\m140930_003227_gallery_manager
 {
 
 }
@@ -59,7 +59,7 @@ Or better - copy migration to you application(but be sure to **remove namespace 
 Add GalleryBehavior to your model, and configure it, create folder for uploaded files.
 
 ```php
-use zxbodya\yii2\galleryManager\GalleryBehavior;
+use porcelanosa\yii2\galleryManager\GalleryBehavior;
 
 class Product extends \yii\db\ActiveRecord 
 {
@@ -102,7 +102,7 @@ See also [documentations of imagine](https://imagine.readthedocs.io/en/master/us
 Add GalleryManagerAction in controller somewhere in your application. Also on this step you can add some security checks for this action.
 
 ```php
-use zxbodya\yii2\galleryManager\GalleryManagerAction;
+use porcelanosa\yii2\galleryManager\GalleryManagerAction;
 
 class ProductController extends Controller
 {
@@ -124,7 +124,7 @@ public function actions()
 Add ImageAttachmentWidget somewhere in you application, for example in editing from.
 
 ```php
-use zxbodya\yii2\galleryManager\GalleryManager;
+use porcelanosa\yii2\galleryManager\GalleryManager;
 
 /* @var $this yii\web\View */
 /* @var $model Product */
