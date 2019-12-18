@@ -23,10 +23,8 @@ use yii\web\View;
     <div class="btn-group" style="display: inline-block;">
 
         <label class="btn btn-default">
-            <input type="checkbox" style="margin-right: 4px;" class="select_all"><?php echo Yii::t(
-                                                                                        'galleryManager/main',
-                                                                                        'Select all'
-                                                                                    ); ?>
+            <input type="checkbox" style="margin-right: 4px;" class="select_all">
+            <?php echo Yii::t('galleryManager/main', 'Select all'); ?>
         </label>
         <div class="btn btn-default disabled edit_selected">
             <i class="fas fa-edit"></i> <?php echo Yii::t('galleryManager/main', 'Edit'); ?>
