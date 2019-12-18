@@ -30,6 +30,7 @@ class GalleryManager extends Widget
     public $apiRoute = false;
 
     public $options = array();
+    public $drop = false;
 
 
     public function init()
@@ -96,7 +97,7 @@ class GalleryManager extends Widget
         $this->options['id'] = $this->id;
         $this->options['class'] = 'gallery-manager';
 
-        return $this->render('galleryManager');
+        return $this->render('galleryManager', ['drop'=>$this->drop]);
     }
 
 }
