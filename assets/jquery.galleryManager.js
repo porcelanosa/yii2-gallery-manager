@@ -92,7 +92,7 @@
       photoTemplate += '<span class="editPhoto btn btn-primary btn-xs"><i class="fas fa-edit"></i></span> ';
     }
 
-    photoTemplate += '<span class="deletePhoto btn btn-danger btn-xs"><i class="fas fa-remove"></i></span>' +
+    photoTemplate += '<span class="deletePhoto btn btn-danger btn-xs"><i class="fas fa-times"></i></span>' +
     '</div><input type="checkbox" class="photo-select"/></div>';
 
 
