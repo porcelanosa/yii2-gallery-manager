@@ -6,7 +6,7 @@
  * @author Bogdan Savluk <savluk.bogdan@gmail.com>
  */
 
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 use yii\web\View;
 
 ?>
@@ -30,7 +30,7 @@ use yii\web\View;
             <i class="fas fa-edit"></i> <?php echo Yii::t('galleryManager/main', 'Edit'); ?>
         </div>
         <div class="btn btn-default disabled remove_selected">
-            <i class="fas fa-remove"></i> <?php echo Yii::t('galleryManager/main', 'Remove'); ?>
+            <i class="fas fa-times"></i> <?php echo Yii::t('galleryManager/main', 'Remove'); ?>
         </div>
     </div>
 </div>
